@@ -4,3 +4,8 @@ function circle(r) {
 }
 console.log(circle(2));
 
+// 사각형의 넓이
+function rectangle(width, height){
+    return (width*height);
+}
+
