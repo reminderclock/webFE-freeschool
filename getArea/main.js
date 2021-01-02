@@ -1,10 +1,20 @@
-//getArea('circle', 10);
+function getArea(shape, ...rest) {
+    switch(shape) {
+        case 'circle':
+        return Math.PI*Math.pow(rest[0],2);
+        case 'rect':
+        return rest[0]*rest[1];
+        case 'trapezoid':
+        return (rest[0]+rest[1])*(rest[2]/2);
+    }
+}
+console.log(getArea('circle', 10));
 // 원의 넓이 값출력
 
-//getArea('rect', 10,15);
+console.log(getArea('rect', 10,15));
 // 사각형의 넓이값출력
 
-//getArea('trapezoid', 10,15,12);
+console.log(getArea('trapezoid', 10,15,12));
 // 사다리꼴의 넓이값출력
 
 //getArea('circle', 1, n);
